@@ -1,0 +1,30 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    width: 100%;
+    /* Altura automática basada en el contenido */
+    display: flex;
+    justify-content: center;
+}
+
+#videoElement {
+    width: 100%;
+    max-width: 640px; /* Tamaño máximo para el video */
+    height: auto;
+    background-color: #333; /* Color de fondo mientras no hay stream */
+    border: 3px solid #007bff;
+    border-radius: 8px;
+    /* Aplicamos un pequeño efecto de espejo, común para las cámaras frontales */
+    transform: scaleX(-1); 
+}
